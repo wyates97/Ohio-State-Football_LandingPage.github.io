@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohio State University Football</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="images/ohio-state-logo.png">
+</head>
+<body>
+    <main>
+        <div class="circle"></div>
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="logo"><img src="images/ohio-state-logo.png" alt="The Ohio State University Logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Coaches</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Jerseys</a></li>
+            </ul>
+        </header>
+        <!-- Content -->
+        <div class="content">
+            <div class="textBox">
+                <h2><b>"Nothing</b> that comes easy<br>is <b>worth a dime."</b><br><span>woody hayes</span></h2>
+                <a href="https://ohiostatebuckeyes.com/">The Ohio State University</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/helmet.png" class="osuHelmet">
+            </div>
+        </div>
+        <!-- Thumbnails -->
+        <ul class="thumbnails">
+            <li><img src="images/coaches/woody-hayes-thumb.png" onclick="imgSlider('images/coaches/woody-hayes2.png');changeCircleColor('#000')"></li>
+            <li><img src="images/coaches/jim-tressel-thumb.png" alt="Jim Tressel" onclick="imgSlider('images/coaches/jim-tressel2.png');changeCircleColor('#D7D7D7')"></li>
+            <li><img src="images/coaches/urban-meyer-thumb.png" alt="Urban Meyer" onclick="imgSlider('images/coaches/urban-meyer2.png');changeCircleColor('#666666')"></li>
+            <li><img src="images/coaches/ryan-day-thumb.png" alt="Ryan Day" onclick="imgSlider('images/coaches/ryan-day2.png');changeCircleColor('#BB0000')"></li>
+        </ul>
+        <!-- Socials -->
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/ohiostatefb/"><img src="images/socials/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/OhioStateFB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/socials/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.instagram.com/ohiostatefb/?hl=en"><img src="images/socials/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
